@@ -1,0 +1,407 @@
+\chapter{Аналитическая часть}
+
+\section{Постановка задачи}
+
+В соответствии с заданием на курсовую работу необходимо разработать загружаемый модуля ядра ОС Linux для мониторинга изменения приоритетов, времени непрерывной работы, простоя и блокировки процессов. Для решения данной задачи необходимо
+
+\begin{itemize}[label*=---]
+	\item проанализировать и выбрать структуры ядра, содержащие необходимую информацию;
+	\item проанализировать и выбрать методы передачи информации из модуля ядра в пространство пользователя;
+	\item разработать алгоритмы и структуру программного обеспечения;
+	\item исследовать приложения различного характера с помощью разработанного программного обеспечения.
+\end{itemize}
+
+\section{Планирование в режиме реального времени}
+
+Проблема планирования в режиме реального времени заключается в том, что группы процессов должны полагаться на постоянство пропускной способности (например, времени исполнения). Для планирования нескольких групп задач в реальном времени может потребоваться назначение так называемого гарантированного доступного времени исполнения. \cite{rt_scheduling}
+
+В качестве решения поставленной проблемы доступное процессорное время делится посредством указания того, сколько времени на выполнение даётся на указанный период. Данное время выделяется для каждой группы процессов реального времени таким образом, что каждая группа может выполняться только в своё выделенное время. Время, не выделенное группам реального времени или не использованное ими, будет выделено задачам с обычным приоритетом (SCHED\_OTHER). \cite{rt_scheduling}
+
+Рассмотрим пример: рендерер реального времени с фиксированным количеством кадров должен выдавать 25 кадров в секунду, что даёт период 0.04 секунды на каждый кадр. Если рендерер также должен проигрывать аудио и реагировать на пользовательский ввод, оставляя около 80\% доступного процессорного времени на работу с графикой, то для этой группы можно выделить время выполнения $ 0.8 \cdot 0.04 = 0.032 $ секунды. \cite{rt_scheduling}
+
+Таким образом, <<графической группе>> будет выделен период 0.04 секунды с ограничением времени выполнения 0.032 секунды. Если аудиопотоку необходимо заполнять буфер DMA (Direct Memory Access, прямой доступ к памяти) каждые 0.005 секунд, но для этого требуется около 3\% времени процессора, ему может быть выделено время выполнения $ 0.03 \cdot 0.005 = 0.00015 $ секунд. Таким образом, данная группа может быть запланирована с периодом 0.005 секунд с временем выполнения 0.00015 секунд. \cite{rt_scheduling}
+
+Оставшееся процессорное время будет использоваться для обработки пользовательского ввода и других задач. Поскольку задачам реального времени явно выделено процессорное время, необходимое для выполнения их задач, нехватка буфера в графике или аудио может быть исключена. \cite{rt_scheduling}
+
+Однако на текущий момент приведенный выше пример ещё не реализован полностью в силу того, что отсутствует реализация планировщика EDF (Erlienst Deadline First scheduling, алгоритм планирования по ближайшему сроку завершения) для использования неоднородных периодов. \cite{rt_scheduling}
+
+
+
+\section{Анализ структур ядра, предоставляющих информацию о приоритетах, времени выполнения и простоя процессов}
+
+% https://stackoverflow.com/questions/5770770/prio-static-prio-rt-priority-in-linux-kernel
+% https://blogs.oracle.com/linux/post/task-priority
+
+\subsection{Структура task\_struct}
+
+В ядре Linux процесс описывается структурой task\_struct. Она определена в файле include/linux/sched.h. Ниже перечислены требующиеся в работе поля данной структуры (версия ядра 6.1.0). \cite{sched}
+
+\begin{enumerate}[label*=\arabic*.]
+	\item \textbf{pid} (Process Identifier) --- уникальный идентификатор процесса, по которому можно получить информацию об этом процессе, а также направить ему управляющий сигнал или завершить его.
+	\item \textbf{prio} --- значение, которое использует планировщик для принятия решений, связанных с планированием рассматриваемого процесса. Чем ниже значение prio, тем выше приоритет процесса. Константы, задающие диапазон значений приоритетов, представлены в листинге \ref{lst:prio}. \cite{nice}
+	
+	\begin{lstlisting}[
+		caption={Константы, задающие диапазон значений приоритетов процессов, версия ядра 6.1.0},
+		label=lst:prio,
+		]
+#define MAX_NICE	19
+#define MIN_NICE	-20
+#define NICE_WIDTH	(MAX_NICE - MIN_NICE + 1)
+
+/*
+* Priority of a process goes from 0..MAX_PRIO-1, valid RT
+* priority is 0..MAX_RT_PRIO-1, and SCHED_NORMAL/SCHED_BATCH
+* tasks are in the range MAX_RT_PRIO..MAX_PRIO-1. Priority
+* values are inverted: lower p->prio value means higher priority.
+*/
+
+#define MAX_RT_PRIO		100
+
+#define MAX_PRIO		(MAX_RT_PRIO + NICE_WIDTH)
+#define DEFAULT_PRIO	(MAX_RT_PRIO + NICE_WIDTH / 2)
+
+/*
+* Convert user-nice values [ -20 ... 0 ... 19 ]
+* to static priority [ MAX_RT_PRIO..MAX_PRIO-1 ],
+* and back.
+*/
+#define NICE_TO_PRIO(nice)	((nice) + DEFAULT_PRIO)
+#define PRIO_TO_NICE(prio)	((prio) - DEFAULT_PRIO)
+	\end{lstlisting}
+
+	Значение \textbf{nice} (фактор <<любезности>>) --- целое число в диапазоне от -20 до 19 (по умолчанию 0). Чем меньше значение фактора <<любезности>> процесса, тем выше его приоритет. Фоновым процессам задаются более высокие значения фактора <<любезности>>.
+	
+	Диапазон значений prio может быть поделён на два интервала:
+	\begin{itemize}[leftmargin=1.6\parindent]
+		\item от 0 до 99 -- процесс реального времени;
+		\item от 100 до 139 -- обычный процесс.
+	\end{itemize}
+
+	Реализации функций для вычисления приоритета процесса представлены в листинге \ref{lst:prio_calc}. \cite{prio_calc}
+	
+	\begin{lstlisting}[
+		caption={Реализации функций для вычисления приоритета процесса, версия ядра 6.1.0},
+		label=lst:prio_calc,
+		]
+/* kernel prio, less is more */
+static inline int __task_prio(struct task_struct *p)
+{
+	if (p->sched_class == &stop_sched_class) /* trumps deadline */
+		return -2;
+	
+	if (rt_prio(p->prio)) /* includes deadline */
+		return p->prio; /* [-1, 99] */
+	
+	if (p->sched_class == &idle_sched_class)
+		return MAX_RT_PRIO + NICE_WIDTH; /* 140 */
+	
+	return MAX_RT_PRIO + MAX_NICE; /* 120, squash fair */
+}
+
+/*
+* Calculate the current priority, i.e. the priority
+* taken into account by the scheduler. This value might
+* be boosted by RT tasks, or might be boosted by
+* interactivity modifiers. Will be RT if the task got
+* RT-boosted. If not then it returns p->normal_prio.
+*/
+static int effective_prio(struct task_struct *p)
+{
+	p->normal_prio = normal_prio(p);
+	/*
+	* If we are RT tasks or we were boosted to RT priority,
+	* keep the priority unchanged. Otherwise, update priority
+	* to the normal priority:
+	*/
+	if (!rt_prio(p->prio))
+		return p->normal_prio;
+	return p->prio;
+}
+	\end{lstlisting}
+
+	\item \textbf{static\_prio} --- значение, которое не изменяется ядром при работе планировщика, однако оно может быть изменено с использованием пользовательского приоритета nice. Реализация функции для изменения значений nice и static\_prio процесса представлены в листинге \ref{lst:static_prio_calc}. \cite{prio_calc}
+	
+	\begin{lstlisting}[
+		caption={Реализация функции для изменения значений nice и static\_prio процесса, версия ядра 6.1.0},
+		label=lst:static_prio_calc,
+		]
+void set_user_nice(struct task_struct *p, long nice)
+{
+	bool queued, running;
+	int old_prio;
+	struct rq_flags rf;
+	struct rq *rq;
+	
+	if (task_nice(p) == nice || nice < MIN_NICE || nice > MAX_NICE)
+		return;
+	/*
+	* We have to be careful, if called from sys_setpriority(),
+	* the task might be in the middle of scheduling on another CPU.
+	*/
+	rq = task_rq_lock(p, &rf);
+	update_rq_clock(rq);
+	
+	/*
+	* The RT priorities are set via sched_setscheduler(), but we still
+	* allow the 'normal' nice value to be set - but as expected
+	* it won't have any effect on scheduling until the task is
+	* SCHED_DEADLINE, SCHED_FIFO or SCHED_RR:
+	*/
+	if (task_has_dl_policy(p) || task_has_rt_policy(p)) {
+		p->static_prio = NICE_TO_PRIO(nice);
+		goto out_unlock;
+	}
+	queued = task_on_rq_queued(p);
+	running = task_current(rq, p);
+	if (queued)
+		dequeue_task(rq, p, DEQUEUE_SAVE | DEQUEUE_NOCLOCK);
+	if (running)
+		put_prev_task(rq, p);
+	
+	p->static_prio = NICE_TO_PRIO(nice);
+	set_load_weight(p, true);
+	old_prio = p->prio;
+	p->prio = effective_prio(p);
+	
+	if (queued)
+		enqueue_task(rq, p, ENQUEUE_RESTORE | ENQUEUE_NOCLOCK);
+	if (running)
+		set_next_task(rq, p);
+	
+	/*
+	* If the task increased its priority or is running and
+	* lowered its priority, then reschedule its CPU:
+	*/
+	p->sched_class->prio_changed(rq, p, old_prio);
+	
+out_unlock:
+	task_rq_unlock(rq, p, &rf);
+}
+	\end{lstlisting}
+
+	\item \textbf{normal\_prio} --- значение, которое зависит от статического приоритета и политики планировщика задач. Если политикой планирования процесса является SCHED\_DEADLINE, то его приоритет будет равен -1. Для процессов не реального времени данное значение равняется значению статического приоритета static\_prio, то есть 120 + nice. Для процессов реального времени данное значение равняется значению, вычисленному с использованием максимального значения приоритета процесса реального времени и, непосредственно, его rt\_prio. Важно отметить тот факт, что, чем больше значение rt\_priority процесса, тем выше его приоритет. Функция вычисления нормального приоритета процесса предоставлена в листинге \ref{lst:normal_prio_calc}. \cite{prio_calc}
+	
+	\begin{lstlisting}[
+		caption={Реализация функции для вычисления нормального приоритета процесса, версия ядра 6.1.0},
+		label=lst:normal_prio_calc,
+		]
+static inline int __normal_prio(int policy, int rt_prio, int nice)
+{
+	int prio;
+	
+	if (dl_policy(policy))
+		prio = MAX_DL_PRIO - 1;
+	else if (rt_policy(policy))
+		prio = MAX_RT_PRIO - 1 - rt_prio;
+	else
+		prio = NICE_TO_PRIO(nice);
+	
+	return prio;
+}
+
+/*
+* Calculate the expected normal priority: i.e. priority
+* without taking RT-inheritance into account. Might be
+* boosted by interactivity modifiers. Changes upon fork,
+* setprio syscalls, and whenever the interactivity
+* estimator recalculates.
+*/
+static inline int normal_prio(struct task_struct *p)
+{
+	return __normal_prio(p->policy, p->rt_priority, 
+		PRIO_TO_NICE(p->static_prio));
+}
+	\end{lstlisting}
+	
+	\item \textbf{utime} --- это процессорное время, проведённое в режиме пользователя и затраченное на выполнение команд. Данное значение включает в себя только время, затраченное центральным процессором, и не включает в себя время, проведённое процессом в очереди на выполнение.
+	\item \textbf{stime} --- это процессорное время, проведённое в режиме ядра и затраченное на выполнение системных вызовов при исполнении процесса.
+\end{enumerate}
+
+
+
+\subsection{Структура sched\_info}
+
+В ядре Linux дескриптор процесса (struct task\_struct) ссылается на структуру sched\_info, предоставляющую информацию о планировании процесса. Определение данной структуры представлено в листинге \ref{lst:info}. \cite{sched}
+
+\begin{lstlisting}[
+	caption={Определение struct sched\_info, версия ядра 6.1.0},
+	label=lst:info,
+	]
+struct sched_info {
+	#ifdef CONFIG_SCHED_INFO
+	/* Cumulative counters: */
+	
+	/* # of times we have run on this CPU: */
+	unsigned long			pcount;
+	
+	/* Time spent waiting on a runqueue: */
+	unsigned long long		run_delay;
+	
+	/* Timestamps: */
+	
+	/* When did we last run on a CPU? */
+	unsigned long long		last_arrival;
+	
+	/* When were we last queued to run? */
+	unsigned long long		last_queued;
+	
+	#endif /* CONFIG_SCHED_INFO */
+};
+\end{lstlisting}
+
+В данной работе требуется рассмотреть поле \textbf{run\_delay}, содержащее количество времени, которое процесс провёл в очереди на выполнение.
+
+
+
+\subsection{Структура sched\_statistics}
+
+В ядре Linux дескриптор процесса (struct task\_struct) ссылается на структуру sched\_statistics, предоставляющую информацию о планировании процесса. Она определена в файле include/linux/sched.h. Ниже перечислены требующиеся в работе поля данной структуры (версия ядра 6.1.0). \cite{sched}
+
+\begin{enumerate}[label*=\arabic*.]
+	\item \textbf{wait\_max} --- максимальное время, которое процесс или поток провёл в очереди, ожидая выделение ресурсов.
+	\item \textbf{wait\_count} --- общее количество раз, когда процесс или поток попадал в очередь на выделение ресурсов.
+	\item \textbf{wait\_sum} --- суммарное время, которое процесс или поток провёл в очереди на выделение ресурсов.
+	\item \textbf{iowait\_count} --- количество раз, когда процесс или поток был блокирован в ожидании завершения ввода/вывода.
+	\item \textbf{iowait\_sum} --- суммарное время, которое процесс или поток был блокирован в ожидании завершения ввода/вывода.
+	\item \textbf{sleep\_max} --- максимальное время, которое процесс или поток провёл в состоянии прерываемого сна.
+	\item \textbf{sum\_sleep\_runtime} --- суммарное время, которое процесс или поток провел в состоянии прерываемого сна.
+	\item \textbf{block\_max} --- максимальное время, которое процесс или поток провёл в состоянии блокировки.
+	\item \textbf{sum\_block\_runtime} --- суммарное время, которое процесс или поток провёл в состоянии блокировки.
+	\item \textbf{exec\_max} --- максимальное время, которое процесс или поток провёл в состоянии выполнения.
+\end{enumerate}
+
+Представленные выше поля структуры shed\_statistics процесса обновляются во время его выполнения с помощью соответствующих функций, описанных в файле /kernel/sched/stats.h. \cite{stats}
+
+
+
+\section{Анализ функций ядра, позволяющих определить принадлежность задачи к группе задач реального времени}
+
+\subsection{Функция rt\_prio}
+
+Функция rt\_prio определяет, является ли процесс задачей реального времени, с использованием значения приоритета. Приоритет процесса сравнивается с максимальным значением приоритета для задачи реального времени. Если данное условие истинно, то процесс относится к задачам реального времени и возвращается единица, иначе ноль. Стоит отметить, что макрос unlikely в данном случае применяется для оптимизации скорости выполнения сравнения. Реализация функции rt\_prio приведена в листинге \ref{lst:rt_prio}. \cite{rt}
+
+\begin{lstlisting}[
+	caption={Реализация функции rt\_prio, версия ядра 6.1.0},
+	label=lst:rt_prio,
+	]
+	static inline int rt_prio(int prio)
+	{
+		if (unlikely(prio < MAX_RT_PRIO))
+			return 1;
+		return 0;
+	}
+\end{lstlisting}
+
+
+
+\subsection{Функция rt\_task}
+
+Функция rt\_task обёртывает вызов функции rt\_prio. Если заданный процесс (struct task\_struct) является задачей реального времени (приоритет меньше максимального для задачи реального времени), то возвращается единица, иначе ноль. Реализация функции rt\_task приведена в листинге \ref{lst:rt_task}. \cite{rt}
+
+\begin{lstlisting}[
+	caption={Реализация функции rt\_task, версия ядра 6.1.0},
+	label=lst:rt_task,
+	]
+	static inline int rt_task(struct task_struct *p)
+	{
+		return rt_prio(p->prio);
+	}
+\end{lstlisting}
+
+
+
+\subsection{Функция task\_is\_realtime}
+
+Функция task\_is\_realtime анализирует политику планирования, установленную для заданного процесса (struct task\_struct). Планировщик Linux оперирует следующими политиками планирования:
+\begin{itemize}[label*=---]
+	\item SCHED\_FIFO --- планирование по алгоритму FIFO (First in-first out);
+	\item SCHED\_RR --- планирование по алгоритму Round-robin;
+	\item SCHED\_DEADLINE --- задание крайнего срока для выполнения спорадических\footnote{Спорадическая задача --- это задача, состоящая из последовательности заданий, каждое из которых активируется не более одного раза за период.} задач;
+	\item SCHED\_OTHER --- планирование разделения времени по умолчанию;
+	\item SCHED\_BATCH --- планирование пакетных процессов;
+	\item SCHED\_IDLE --- планирование низкоприоритетных процессов.
+\end{itemize}
+SCHED\_FIFO и SCHED\_RR являются политиками реального времени. \cite{policy}
+
+Реализация функции task\_is\_realtime приведена в листинге \ref{lst:task_is_realtime}. \cite{rt}
+
+\begin{lstlisting}[
+	caption={Реализация функции task\_is\_realtime, версия ядра 6.1.0},
+	label=lst:task_is_realtime,
+	]
+	static inline bool task_is_realtime(struct task_struct *tsk)
+	{
+		int policy = tsk->policy;
+		
+		if (policy == SCHED_FIFO || policy == SCHED_RR)
+			return true;
+		if (policy == SCHED_DEADLINE)
+			return true;
+		return false;
+	}
+\end{lstlisting}
+
+
+
+
+
+\section{Передача данных из пространства ядра в пространство пользователя}
+
+В ОС Linux для передачи данных из пространства ядра в пространство пользователя может использоваться виртуальная файловая система proc, которая предоставляет системные вызовы для реализации взаимодействия между двумя этими пространствами.
+
+Структура proc\_ops определена в файле linux/proc\_fs.h и содержит указатели на функции драйвера, которые отвечают за выполнение различных операций с устройством. Поля структуры представлены в листинге \ref{lst:proc_ops}. \cite{proc_ops}
+
+\begin{lstlisting}[
+	caption={Определение struct proc\_ops, версия ядра 6.1.0},
+	label=lst:proc_ops,
+	]
+	struct proc_ops {
+		unsigned int proc_flags;
+		int	(*proc_open)(struct inode *, struct file *);
+		ssize_t	(*proc_read)(struct file *, char __user *, size_t, 
+			loff_t *);
+		ssize_t (*proc_read_iter)(struct kiocb *, struct iov_iter *);
+		ssize_t	(*proc_write)(struct file *, const char __user *, size_t, 
+			loff_t *);
+		/* mandatory unless nonseekable_open() or equivalent is used */
+		loff_t	(*proc_lseek)(struct file *, loff_t, int);
+		int	(*proc_release)(struct inode *, struct file *);
+		__poll_t (*proc_poll)(struct file *, struct poll_table_struct *);
+		long	(*proc_ioctl)(struct file *, unsigned int, unsigned long);
+		#ifdef CONFIG_COMPAT
+		long	(*proc_compat_ioctl)(struct file *, unsigned int, unsigned 
+			long);
+		#endif
+		int	(*proc_mmap)(struct file *, struct vm_area_struct *);
+		unsigned long (*proc_get_unmapped_area)(struct file *, unsigned 
+			long, unsigned long, unsigned long, unsigned long);
+	} __randomize_layout;
+\end{lstlisting}
+
+Функции copy\_to\_user и copy\_from\_user, определённые в файле include/linux/uaccess.h, позволяют копировать данные из пространства ядра в пространство пользователя и наоборот. Они возвращают количество байт, которые не удалось скопировать. Реализация данных функций приведена в листинге \ref{lst:copy}. \cite{copy}
+
+\begin{lstlisting}[
+	caption={Реализация функции copy\_to\_user, версия ядра 6.1.0},
+	label=lst:copy,
+	]
+	static __always_inline unsigned long __must_check
+	copy_from_user(void *to, const void __user *from, unsigned long n)
+	{
+		if (check_copy_size(to, n, false))
+			n = _copy_from_user(to, from, n);
+		return n;
+	}
+	
+	static __always_inline unsigned long __must_check
+	copy_to_user(void __user *to, const void *from, unsigned long n)
+	{
+		if (check_copy_size(from, n, true))
+			n = _copy_to_user(to, from, n);
+		return n;
+	}
+\end{lstlisting}
+
+
+
+\section*{Вывод из аналитической части}
+В результате анализа кода ядра определены структуры, содержащие необходимую информацию: task\_struct (поля pid, prio, static\_prio, normal\_prio, utime, stime), sched\_info (поле run\_delay) и sched\_statistics (поля wait\_max, wait\_count, wait\_sum, iowait\_count, iowait\_sum, sleep\_max, sum\_sleep\_runtime, block\_max, sum\_block\_runtime, exec\_max). Также были определены функции, позволяющие определить, относится ли процесс к задачам реального времени: rt\_prio, rt\_task и task\_is\_realtime.

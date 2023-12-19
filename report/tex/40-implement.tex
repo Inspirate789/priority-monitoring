@@ -1,0 +1,244 @@
+\chapter{Технологическая часть}
+
+\section{Выбор языка и среды программирования}
+
+При написании программного кода использовался язык программирования C.~\cite{c} Выбор языка С обусловлен тем, что в настоящий момент большая часть исходного кода ядра Linux, его модулей и драйверов написана именно на данном языке.~\cite{rust_in_linux}
+
+В качестве компилятора был выбран gcc.~\cite{gcc} Выбор обоснован тем, что данный компилятор является предпочтительным для сборки ядра Linux.~\cite{build_linux}
+
+\section{Реализация алгоритмов определения и сохранения приоритетов, времени непрерывной работы, простоя и блокировки процессов}
+
+В листинге \ref{lst:kernel} представлена реализация алгоритмов определения и сохранения приоритетов, времени непрерывной работы, простоя и блокировки процессов.
+
+\begin{lstlisting}[
+	caption={Реализация алгоритмов определения и сохранения приоритетов, времени непрерывной работы, простоя и блокировки процессов},
+	label=lst:kernel,
+	]
+static int printTasks(void *arg)
+{
+	struct task_struct *task;
+	size_t currentPrint = 1;
+	char currentString[TMP_STRLEN];
+	
+	while (currentPrint <= LOGS_COUNT)
+	{
+		task = &init_task;
+		memset(currentString, 0, TMP_STRLEN);
+		snprintf(currentString, TMP_STRLEN, "~~~~~~~~~~~~~~~~~~~~~~~~~~%lu "
+		"TIME~~~~~~~~~~~~~~~~~~~~~~~~~~\n", currentPrint);
+		checkOverflow(currentString, log, LOG_SIZE);
+		strcat(log, currentString);
+		
+		for_each_process(task)
+		{
+			if (task_is_realtime(task))
+			{
+				memset(currentString, 0, TMP_STRLEN);
+				snprintf(currentString, TMP_STRLEN,
+					"pid: %-5d, comm: %15s\nprio: %3d, static_prio: %3d, 
+					normal_prio (with "
+					"scheduler policy): %3d, rt_priority: %3d\n"
+					"run_delay: %10lld\nutime: %10lld (ticks), stime: 
+					%15lld (ticks)\n"
+					"sched_statistics:\nwait_max: %10llu, wait_count: 
+					%10llu, wait_sum: %10llu\n"
+					"iowait_count: %10llu, iowait_sum: %10llu\n"
+					"sleep_max: %10llu, sum_sleep_runtime: %10llu\n"
+					"block_max: %10llu, sum_block_runtime: %10llu, exec_max: 
+					%10llu\n\n",
+					task->pid, task->comm, task->prio, task->static_prio, 
+					task->normal_prio, task->rt_priority,
+					task->sched_info.run_delay, task->utime, task->stime,
+					task->stats.wait_max, task->stats.wait_count, 
+					task->stats.wait_sum,
+					task->stats.iowait_count, task->stats.iowait_sum,
+					task->stats.sleep_max, task->stats.sum_sleep_runtime,
+					task->stats.block_max, task->stats.sum_block_runtime, 
+					task->stats.exec_max
+				);
+				checkOverflow(currentString, log, LOG_SIZE);
+				strcat(log, currentString);
+			}
+		}
+		
+		currentPrint++;
+		mdelay(DELAY_MS);
+	}
+	
+	return 0;
+}
+
+static int analyzerOpen(struct inode *spInode, struct file *spFile)
+{
+	printk(KERN_INFO "%s open called\n", LOG_PREFIX);
+	try_module_get(THIS_MODULE);
+	return 0;
+}
+
+static ssize_t analyzerRead(struct file *filep, char __user *buf, 
+	size_t count, loff_t *offp)
+{
+	ssize_t logLen = strlen(log);
+	printk(KERN_INFO "%s read called\n", LOG_PREFIX);
+	
+	if (copy_to_user(buf, log, logLen))
+	{
+		printk(KERN_ERR "%s copy_to_user error\n", LOG_PREFIX);
+		
+		return -EFAULT;
+	}
+	
+	memset(log, 0, LOG_SIZE);
+	
+	return logLen;
+}
+
+static ssize_t analyzerWrite(struct file *file, const char __user *buf, 
+	size_t len, loff_t *offp)
+{
+	printk(KERN_INFO "%s write called\n", LOG_PREFIX);
+	return 0;
+}
+
+static int analyzerRelease(struct inode *spInode, struct file *spFile)
+{
+	printk(KERN_INFO "%s release called\n", LOG_PREFIX);
+	module_put(THIS_MODULE);
+	return 0;
+}
+
+static struct proc_ops fops = {
+	proc_read:    analyzerRead,
+	proc_write:   analyzerWrite,
+	proc_open:    analyzerOpen,
+	proc_release: analyzerRelease
+};
+\end{lstlisting}
+
+\section{Реализация алгоритма предоставления информации о процессах пользователю}
+
+В листинге \ref{lst:user} представлена реализация алгоритма предоставления информации об изменении приоритетов, времени непрерывной работы, простоя и блокировки процессов пользователю.
+
+\begin{lstlisting}[
+	caption={Реализация алгоритма предоставления информации об изменении приоритетов, времени непрерывной работы, простоя и блокировки процессов пользователю},
+	label=lst:user,
+	]
+int main(int argc, char *argv[])
+{
+	FILE *filePtr = NULL;
+	char log[LOG_SIZE] = {'\0'};
+	
+	system("sudo insmod taskInfoGetter.ko");
+	
+	for (int i = 0; i < LOGS_COUNT; i++)
+	{
+		filePtr = popen("cat /proc/processAnalyzer", "r");
+		
+		if (filePtr == NULL)
+		{
+			printf("Error: can't execute cat for process analyzer");
+			return 1;
+		}
+		
+		while (fgets(log, sizeof(log), filePtr) != NULL)
+		printf("%s", log);
+		
+		pclose(filePtr);
+		sleep(DELAY_S);
+	}
+	
+	system("sudo rmmod taskInfoGetter");
+	
+	return EXIT_SUCCESS;
+}
+\end{lstlisting}
+
+
+
+\section{Makefile}
+
+В листинге \ref{lst:makefile} представлен Makefile для сборки компонентов программы.
+
+\begin{lstlisting}[
+	caption={Содержание Makefile},
+	label=lst:makefile,
+	]
+ifneq ($(KERNELRELEASE),)
+	obj-m := taskInfoGetter.o
+	taskInfoGetter-objs := md.o
+else
+	CURRENT = $(shell uname -r)
+	KDIR = /lib/modules/$(CURRENT)/build
+	PWD = $(shell pwd)
+
+default:
+	$(MAKE) -C $(KDIR) M=$(PWD) modules
+	make clean
+
+logger:
+	gcc starterLogger.c -Wall -Werror -o sl.exe
+
+clean:
+	@rm -f *.o .*.cmd .*.flags *.mod.c *.order *.mod *.symvers
+	@rm -f .*.*.cmd *~ *.*~ TODO.*
+	@rm -fR .tmp*
+	@rm -rf .tmp_versions
+
+disclean: clean
+	@rm *.ko *.symvers *.mod
+endif 
+\end{lstlisting}
+
+
+
+\section{Демонстрация работы}
+
+В листинге \ref{lst:res} представлена демонстрация работы программы загрузки модуля и получения информации.
+
+\begin{lstlisting}[
+caption={Фрагмент вывода при запуске программы},
+label=lst:res,
+]
+~~~~~~~~~~~~~~~~~~~~~~~~~~1 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 16   , comm:     migration/0
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, 
+rt_priority:  99
+run_delay: 1112861120
+utime:          0 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:      8400, wait_count:        410, wait_sum:         3657080
+iowait_count:          0, iowait_sum:          0
+sleep_max:       3000, sum_sleep_runtime: 1101204040
+block_max:       8400, sum_block_runtime: 1112861120, exec_max:      74000
+\end{lstlisting}
+
+В листинге \ref{lst:syslog} представлено содержание журнала ядра при загрузке и выгрузке модуля из системы.
+
+\begin{lstlisting}[
+caption={Содержание журнала ядра},
+label=lst:syslog,
+]
+[  465.991558] [PROCESS ANALYZER] module loaded
+[  465.996553] [PROCESS ANALYZER] open called
+[  465.996591] [PROCESS ANALYZER] read called
+[  465.996660] [PROCESS ANALYZER] read called
+[  465.996807] [PROCESS ANALYZER] release called
+[  476.001023] [PROCESS ANALYZER] open called
+[  476.001075] [PROCESS ANALYZER] read called
+[  476.001194] [PROCESS ANALYZER] release called
+[  486.005731] [PROCESS ANALYZER] open called
+[  486.005777] [PROCESS ANALYZER] read called
+[  486.005888] [PROCESS ANALYZER] release called
+[  496.010964] [PROCESS ANALYZER] open called
+[  496.011017] [PROCESS ANALYZER] read called
+[  496.011132] [PROCESS ANALYZER] release called
+[  506.016397] [PROCESS ANALYZER] open called
+[  506.016450] [PROCESS ANALYZER] read called
+[  506.016569] [PROCESS ANALYZER] release called
+[  516.021766] [PROCESS ANALYZER] open called
+[  516.021817] [PROCESS ANALYZER] read called
+[  516.021934] [PROCESS ANALYZER] release called
+[  526.051060] [PROCESS ANALYZER] module unloaded
+\end{lstlisting}
+
+

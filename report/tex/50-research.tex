@@ -1,0 +1,241 @@
+\chapter{Исследовательская часть}
+
+\section{Описание проводимого исследования}
+
+Ниже приведены технические характеристики устройства, на котором выполнялось исследование.
+
+\begin{itemize}[label*=---]
+	\item Операционная система: Debian GNU/Linux 12 (bookworm) x86\_64, версия ядра 6.1.0-12-amd64.
+	\item Объём оперативной памяти: 16 Гб.
+	\item Процессор: Intel i5-9300H 2.4 ГГц.
+\end{itemize}
+
+Исследование проводилось на ноутбуке, включённом в сеть электропитания. Во время проведения исследования ноутбук был нагружен только встроенными приложениями окружения, а также исследуемыми программами.
+
+Для исследования изменения приоритетов, времени непрерывной работы, простоя и блокировки процессов в Linux рассматривались три приложения различного характера: медиапроигрыватель VLC Media Player, веб-сервер и программа для выполнения математических вычислений. Для каждого приложения было произведено 5 итераций вывода информации о соответствующем процессе с интервалом 10 секунд.
+
+\section{Вывод информации о процессе, выполняющем воспроизведение видео с использованием VLC Media Player}
+
+Для исследования процесса воспроизведения видео с помощью медиапроигрывателя VLC Media Player был открыт видеофайл. Для того, чтобы определить идентификатор процесса и удостовериться в том, что данный файл используется только исследуемым приложением, использовалась утилита lsof.
+
+При анализе результатов было обнаружено, что среди процессов, отнесённых к задачам реального времени, отсутствует процесс, проигрывающий видео. По этой причине было принято решение убрать фильтрацию информации о процессах по их принадлежности к задачам реального времени.
+
+В листинге \ref{lst:vlc} представлен фрагмент вывода разработанной программы, отражающий статистику выполнения процесса, проигрывающего видео с использованием VLC Media Player.
+
+\begin{lstlisting}[
+	caption={Информация о процессе, выполняющем воспроизведение видео с использованием VLC Media Player},
+	label=lst:vlc,
+	]
+~~~~~~~~~~~~~~~~~~~~~~~~~~1 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 32820, comm:           totem
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:  189644604, task_is_realtime: 0
+utime: 30864000000 (ticks), stime:      9728000000 (ticks)
+sched_statistics:
+wait_max:      32000, wait_count:        150, wait_sum:     380000
+iowait_count:     684000, iowait_sum:  189264604
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:      32000, sum_block_runtime:  189644604, exec_max:      51800
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~2 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 32820, comm:           totem
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:  190086883, task_is_realtime: 0
+utime: 31216000000 (ticks), stime:      9812000000 (ticks)
+sched_statistics:
+wait_max:      32000, wait_count:        230, wait_sum:     582000
+iowait_count:    1048800, iowait_sum:  189504883
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:      32000, sum_block_runtime:  190086883, exec_max:      51800
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~3 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 32820, comm:           totem
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:  190417525, task_is_realtime: 0
+utime: 31580000000 (ticks), stime:      9904000000 (ticks)
+sched_statistics:
+wait_max:      32000, wait_count:        290, wait_sum:     734000
+iowait_count:    1322400, iowait_sum:  189683525
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:      32000, sum_block_runtime:  190417525, exec_max:      59800
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~4 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 32820, comm:           totem
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:  191623392, task_is_realtime: 0
+utime: 31904000000 (ticks), stime:      9988000000 (ticks)
+sched_statistics:
+wait_max:      32000, wait_count:        360, wait_sum:     912000
+iowait_count:    1641600, iowait_sum:  190711392
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:      32000, sum_block_runtime:  191623392, exec_max:      59800
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~5 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 32820, comm:           totem
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:  193040872, task_is_realtime: 0
+utime: 32268000000 (ticks), stime:     10100000000 (ticks)
+sched_statistics:
+wait_max:      32000, wait_count:        440, wait_sum:    1114000
+iowait_count:    2006400, iowait_sum:  191926872
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:      32000, sum_block_runtime:  193040872, exec_max:      59800
+\end{lstlisting}
+
+По результатам исследования процесса, выполняющего воспроизведение видео с использованием VLC Media Player, было установлено, что в течение работы данного процесса его приоритеты не изменялись и не соответствовали задачам реального времени. Рассматриваемое приложение 99.4\% времени блокировки  (поле sum\_block\_runtime) затратило на ожидание завершения ввода-вывода (поле iowait\_sum), оставшиеся 0.6\% пришлись на ожидание в очереди на выделение ресурсов (поле wait\_sum).
+
+
+
+\section{Вывод информации о процессе, выполняющем обработку сетевых запросов}
+
+Для исследования процесса обработки сетевых запросов был запущен специально разработанный веб-сервер. Далее на него была подана постоянная нагрузка, состоящая из запросов на передачу файлов по сети. Интенсивность нагрузки составляла 400 запросов в секунду. Для того, чтобы определить идентификатор исследуемого процесса, использовалась команда ps, для генерации запросов на веб-сервер --- утилита ab.
+
+В листинге \ref{lst:server} представлен фрагмент вывода разработанной программы, отражающий статистику выполнения процесса, обрабатывающего запросы на передачу файлов по сети.
+
+\begin{lstlisting}[
+	caption={Информация о процессе, выполняющем обработку сетевых запросов},
+	label=lst:server,
+	]
+~~~~~~~~~~~~~~~~~~~~~~~~~~1 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 51122, comm:             app
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:  383070792, task_is_realtime: 0
+utime:  884000000 (ticks), stime:      3388000000 (ticks)
+sched_statistics:
+wait_max:      18800, wait_count:     557600, wait_sum:    636983200
+iowait_count:    7714200, iowait_sum:  890145400
+sleep_max:     150000, sum_sleep_runtime:     150000
+block_max:     150000, sum_block_runtime: 1527278600, exec_max:      79380
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~2 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 51122, comm:             app
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:  442082750, task_is_realtime: 0
+utime: 1020000000 (ticks), stime:      3788000000 (ticks)
+sched_statistics:
+wait_max:      18800, wait_count:     646000, wait_sum:  738321400
+iowait_count:    8941400, iowait_sum: 1031759440
+sleep_max:     150000, sum_sleep_runtime:     150000
+block_max:     150000, sum_block_runtime: 1770230840, exec_max:      79380
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~3 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 51122, comm:             app
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:  498946337, task_is_realtime: 0
+utime: 1120000000 (ticks), stime:      4164000000 (ticks)
+sched_statistics:
+wait_max:      22660, wait_count:     709600, wait_sum:  810705800
+iowait_count:    9818000, iowait_sum: 1132912900
+sleep_max:     150000, sum_sleep_runtime:     150000
+block_max:     150000, sum_block_runtime: 1943768700, exec_max:      79380
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~4 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 51122, comm:             app
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:  514424039, task_is_realtime: 0
+utime: 1220000000 (ticks), stime:      4588000000 (ticks)
+sched_statistics:
+wait_max:      22660, wait_count:     773036, wait_sum:  883000000
+iowait_count:   10694680, iowait_sum: 1234065200
+sleep_max:     150000, sum_sleep_runtime:     150000
+block_max:     150000, sum_block_runtime: 2117215200, exec_max:      85620
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~5 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 51122, comm:             app
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:  573472791, task_is_realtime: 0
+utime: 1292000000 (ticks), stime:      4980000000 (ticks)
+sched_statistics:
+wait_max:      22660, wait_count:     818000, wait_sum:  933780000
+iowait_count:   11308000, iowait_sum: 1304800000
+sleep_max:     150000, sum_sleep_runtime:     150000
+block_max:     150000, sum_block_runtime: 2238730000, exec_max:      85620
+\end{lstlisting}
+
+По результатам исследования процесса, выполняющего обработку сетевых запросов, было установлено, что в течение работы данного процесса его приоритеты не изменялись и не соответствовали задачам реального времени. Рассматриваемое приложение 58.283\% времени блокировки затратило на ожидание завершения ввода-вывода, 41.710\% --- на ожидание в очереди на выделение ресурсов, оставшиеся 0.007\% пришлись на нахождение в состоянии прерываемого сна.
+
+
+
+\section{Вывод информации о процессе, выполняющем математические вычисления}
+
+Для исследования процесса выполнения математических вычислений была запущена программа, выполняющая решение дифференциальных уравнений. Для того, чтобы определить идентификатор исследуемого процесса, использовалась команда ps.
+
+В листинге \ref{lst:math} представлен фрагмент вывода разработанной программы, отражающий статистику выполнения процесса, выполняющего математические вычисления.
+
+\begin{lstlisting}[
+	caption={Информация о процессе, выполняющем математические вычисления},
+	label=lst:math,
+	]
+~~~~~~~~~~~~~~~~~~~~~~~~~~1 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 41386, comm:            main
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:   10159758, task_is_realtime: 0
+utime: 9116000000 (ticks), stime:        36000000 (ticks)
+sched_statistics:
+wait_max:       7400, wait_count:     111800, wait_sum: 2129783400
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:       7400, sum_block_runtime: 2129783400, exec_max:     124400
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~2 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 41386, comm:            main
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:   10302105, task_is_realtime: 0
+utime: 9524000000 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:       7400, wait_count:          0, wait_sum: 2468612600
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:       7400, sum_block_runtime: 2468612600, exec_max:     124400
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~3 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 41386, comm:            main
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:   12794702, task_is_realtime: 0
+utime: 10772000000 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:       7400, wait_count:          0, wait_sum: 2710633400
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:       7400, sum_block_runtime: 2710633400, exec_max:     124400
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~4 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 41386, comm:            main
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:   14617802, task_is_realtime: 0
+utime: 13012000000 (ticks), stime:        48000000 (ticks)
+sched_statistics:
+wait_max:       7400, wait_count:          0, wait_sum: 2952654200
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:       7400, sum_block_runtime: 2952654200, exec_max:     124400
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~5 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 41386, comm:            main
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, 
+rt_priority:   0
+run_delay:   18906731, task_is_realtime: 0
+utime: 14380000000 (ticks), stime:        52000000 (ticks)
+sched_statistics:
+wait_max:       7400, wait_count:          0, wait_sum: 3122068800
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:       7400, sum_block_runtime: 3122068800, exec_max:     124400
+
+\end{lstlisting}
+
+По результатам исследования процесса, выполняющего математические вычисления, было установлено, что в течение работы данного процесса его приоритеты не изменялись и не соответствовали задачам реального времени. Рассматриваемое приложение не взаимодействовало с внешними устройствами и затрачивало всё время выполнения (utime + stime) на вычисления, блокируясь только по истечении кванта, предоставляемого системой, и помещении данного процесса в очередь на выполнение.

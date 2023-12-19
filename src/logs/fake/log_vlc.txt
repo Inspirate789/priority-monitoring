@@ -1,0 +1,54 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~1 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 32820, comm:           totem
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0
+run_delay:  189644604, task_is_realtime: 0
+utime: 30864000000 (ticks), stime:      9728000000 (ticks)
+sched_statistics:
+wait_max:      32000, wait_count:        150, wait_sum:     380000
+iowait_count:     684000, iowait_sum:  189264604
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:      32000, sum_block_runtime:  189644604, exec_max:      51800
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~2 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 32820, comm:           totem
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0
+run_delay:  190086883, task_is_realtime: 0
+utime: 31216000000 (ticks), stime:      9812000000 (ticks)
+sched_statistics:
+wait_max:      32000, wait_count:        230, wait_sum:     582000
+iowait_count:    1048800, iowait_sum:  189504883
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:      32000, sum_block_runtime:  190086883, exec_max:      51800
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~3 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 32820, comm:           totem
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0
+run_delay:  190417525, task_is_realtime: 0
+utime: 31580000000 (ticks), stime:      9904000000 (ticks)
+sched_statistics:
+wait_max:      32000, wait_count:        290, wait_sum:     734000
+iowait_count:    1322400, iowait_sum:  189683525
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:      32000, sum_block_runtime:  190417525, exec_max:      59800
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~4 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 32820, comm:           totem
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0
+run_delay:  191623392, task_is_realtime: 0
+utime: 31904000000 (ticks), stime:      9988000000 (ticks)
+sched_statistics:
+wait_max:      32000, wait_count:        360, wait_sum:     912000
+iowait_count:    1641600, iowait_sum:  190711392
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:      32000, sum_block_runtime:  191623392, exec_max:      59800
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~5 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 32820, comm:           totem
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0
+run_delay:  193040872, task_is_realtime: 0
+utime: 32268000000 (ticks), stime:     10100000000 (ticks)
+sched_statistics:
+wait_max:      32000, wait_count:        440, wait_sum:    1114000
+iowait_count:    2006400, iowait_sum:  191926872
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:      32000, sum_block_runtime:  193040872, exec_max:      59800

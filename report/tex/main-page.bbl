@@ -1,0 +1,263 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{tannenbaum}{book}{}
+      \name{author}{2}{}{%
+        {{hash=cc749e0f8b9c539db0f7cf7f908e72c6}{%
+           family={Таненбаум},
+           familyi={Т\bibinitperiod},
+           given={Э.},
+           giveni={Э\bibinitperiod}}}%
+        {{hash=a4d69457fdfe9d4a311400678a4cf104}{%
+           family={Бос},
+           familyi={Б\bibinitperiod},
+           given={Х.},
+           giveni={Х\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Питер}%
+      }
+      \strng{namehash}{387dc55da66d6f810d2b568cdf1ec85b}
+      \strng{fullhash}{387dc55da66d6f810d2b568cdf1ec85b}
+      \strng{bibnamehash}{387dc55da66d6f810d2b568cdf1ec85b}
+      \strng{authorbibnamehash}{387dc55da66d6f810d2b568cdf1ec85b}
+      \strng{authornamehash}{387dc55da66d6f810d2b568cdf1ec85b}
+      \strng{authorfullhash}{387dc55da66d6f810d2b568cdf1ec85b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{title}{Современные операционные системы}
+      \field{year}{2015}
+    \endentry
+    \entry{rt_scheduling}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Real-Time group scheduling}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.kernel.org/scheduler/sched-rt-group.html
+      \endverb
+      \verb{url}
+      \verb https://docs.kernel.org/scheduler/sched-rt-group.html
+      \endverb
+    \endentry
+    \entry{sched}{online}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{title}{Исходный код /include/linux/sched.h}
+      \field{urlday}{4}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/sched.h
+      \endverb
+      \verb{url}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/sched.h
+      \endverb
+    \endentry
+    \entry{nice}{online}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{title}{Исходный код /include/linux/sched/prio.h}
+      \field{urlday}{4}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/sched/prio.h
+      \endverb
+      \verb{url}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/sched/prio.h
+      \endverb
+    \endentry
+    \entry{prio_calc}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Исходный код /kernel/sched/core.c}
+      \field{urlday}{4}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/kernel/sched/core.c
+      \endverb
+      \verb{url}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/kernel/sched/core.c
+      \endverb
+    \endentry
+    \entry{stats}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Исходный код /kernel/sched/stats.h}
+      \field{urlday}{18}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/kernel/sched/stats.h
+      \endverb
+      \verb{url}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/kernel/sched/stats.h
+      \endverb
+    \endentry
+    \entry{rt}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Исходный код /include/linux/sched/rt.h}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/sched/rt.h
+      \endverb
+      \verb{url}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/sched/rt.h
+      \endverb
+    \endentry
+    \entry{policy}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{sched(7) --- Linux manual page}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://man7.org/linux/man-pages/man7/sched.7.html
+      \endverb
+      \verb{url}
+      \verb https://man7.org/linux/man-pages/man7/sched.7.html
+      \endverb
+    \endentry
+    \entry{proc_ops}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Исходный код /include/linux/proc\_fs.h}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/proc_fs.h
+      \endverb
+      \verb{url}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/proc_fs.h
+      \endverb
+    \endentry
+    \entry{copy}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Исходный код /include/linux/uaccess.h}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/uaccess.h
+      \endverb
+      \verb{url}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/uaccess.h
+      \endverb
+    \endentry
+    \entry{c}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{ISO/IEC 9899:1990 Programming languages --- C}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.iso.org/standard/17782.html
+      \endverb
+      \verb{url}
+      \verb https://www.iso.org/standard/17782.html
+      \endverb
+    \endentry
+    \entry{rust_in_linux}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Линус Торвальдс запланировал внедрение Rust в Linux 6.1}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.linux.org.ru/news/kernel/16978439
+      \endverb
+      \verb{url}
+      \verb https://www.linux.org.ru/news/kernel/16978439
+      \endverb
+    \endentry
+    \entry{gcc}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{GCC, the GNU Compiler Collection}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://gcc.gnu.org/
+      \endverb
+      \verb{url}
+      \verb https://gcc.gnu.org/
+      \endverb
+    \endentry
+    \entry{build_linux}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{How to Compile a Linux Kernel}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.linux.com/topic/desktop/how-compile-linux-kernel-0
+      \endverb
+      \verb{url}
+      \verb https://www.linux.com/topic/desktop/how-compile-linux-kernel-0
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

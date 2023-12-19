@@ -1,0 +1,55 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~1 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 41386, comm:            main
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0
+run_delay:   10159758, task_is_realtime: 0
+utime: 9116000000 (ticks), stime:        36000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~2 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 41386, comm:            main
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0
+run_delay:   10302105, task_is_realtime: 0
+utime: 9524000000 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~3 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 41386, comm:            main
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0
+run_delay:   12794702, task_is_realtime: 0
+utime: 10772000000 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~4 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 41386, comm:            main
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0
+run_delay:   14617802, task_is_realtime: 0
+utime: 13012000000 (ticks), stime:        48000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~5 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 41386, comm:            main
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0
+run_delay:   18906731, task_is_realtime: 0
+utime: 14380000000 (ticks), stime:        52000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
