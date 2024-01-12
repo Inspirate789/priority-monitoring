@@ -50,7 +50,7 @@ static int printTasks(void *arg)
 
         for_each_process(task)
         {
-            if (task->pid == 51122)
+            if (task->pid == 31689)
             {
                 memset(currentString, 0, TMP_STRLEN);
                 snprintf(currentString, TMP_STRLEN,

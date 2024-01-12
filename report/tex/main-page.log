@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2023.8.13)  19 DEC 2023 08:18
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2023.8.13)  26 DEC 2023 09:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1929,17 +1929,16 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <16> not available
 
 
 
-]
+] [7] [8]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 46.
- [7]
-LaTeX Font Info:    Trying to load font information for TU+pcr on input line 46
+nput line 76.
+LaTeX Font Info:    Trying to load font information for TU+pcr on input line 76
 .
-LaTeX Font Info:    No file TUpcr.fd. on input line 46.
+LaTeX Font Info:    No file TUpcr.fd. on input line 76.
 
 
 LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 46.
+(Font)              using `TU/lmr/m/n' instead on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Mod
@@ -1950,19 +1949,25 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[8] [9] [10] [11] [12] [13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
-[]\TU/TimesNewRoman(1)/m/n/14.4 Функции copy_to_user и copy_from_user, определё
-нные в файле
+[9] [10] [11] [12] [13] [14] [15] [16]
+Underfull \hbox (badness 3942) in paragraph at lines 413--414
+[]\TU/TimesNewRoman(1)/m/n/14.4 Функции copy_to_user() и copy_from_user(), опре
+делённые в файле
+ []
+
+[17] [18]
+Underfull \hbox (badness 1320) in paragraph at lines 489--490
+[]\TU/TimesNewRoman(1)/m/n/14.4 В результате проведённого анализа для мониторин
+га были выбраны
  []
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 381--382
-\TU/TimesNewRoman(1)/m/n/14.4 include/linux/uaccess.h, позволяют копировать дан
-ные из пространства яд-
+Underfull \hbox (badness 1939) in paragraph at lines 498--499
+\TU/TimesNewRoman(1)/m/n/14.4 В структуре sched_info информацию о количестве вр
+емени, которое про-
  []
 
-) [16] [17]
+[19]) [20]
 \openout2 = `30-design.aux'.
 
  (./30-design.tex
@@ -1971,7 +1976,7 @@ File: assets/idef0_a0.png Graphic file (type bmp)
 <assets/idef0_a0.png>
 File: assets/idef0_a1.png Graphic file (type bmp)
 <assets/idef0_a1.png>
-[18
+[21
 
 
 
@@ -1979,55 +1984,55 @@ File: assets/idef0_a1.png Graphic file (type bmp)
 ]
 File: assets/kernel.png Graphic file (type bmp)
 <assets/kernel.png>
- [19]
+ [22]
 File: assets/log.png Graphic file (type bmp)
 <assets/log.png>
- [20]
+ [23]
 File: assets/user.png Graphic file (type bmp)
 <assets/user.png>
- [21]
+ [24]
 File: assets/structure.png Graphic file (type bmp)
 <assets/structure.png>
- [22]) [23]
+ [25]) [26]
 \openout2 = `40-implement.aux'.
 
  (./40-implement.tex
 Глава 3.
-[24
+[27
 
 
 
 
-] [25] [26] [27] [28]) [29]
+] [28] [29] [30] [31]) [32]
 \openout2 = `50-research.aux'.
 
  (./50-research.tex
 Глава 4.
-[30
+[33
 
 
 
 
-] [31] [32] [33] [34]) [35] [36]
+] [34] [35] [36] [37] [38] [39]) [40]
 \openout2 = `60-conclusion.aux'.
 
- (./60-conclusion.tex) [37
+ (./60-conclusion.tex) [41
 
 
 
 
-] [38
+] [42
 
 
 
-] [39]
+]
+[43]
 \openout2 = `70-appendix.aux'.
 
+ (./70-appendix.tex [44
 
-(./70-appendix.tex [40
 
-
-] [41] [42] [43]) [44]
+] [45] [46] [47]) [48]
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -2121,7 +2126,8 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {newzealand/target}  =>  {english}
 >  {newzealand/variant}  =>  {newzealand}
 >  {newzealand/options}  =>  {variant=newzealand}.
- 
+
+
 AED: lastpage setting LastPage
 (./main-page.aux (./10-introduction.aux) (./20-analyth.aux) (./30-design.aux)
 (./40-implement.aux) (./50-research.aux) (./60-conclusion.aux)
@@ -2134,18 +2140,18 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main-page.out' has not changed.
-(rerunfilecheck)             Checksum: D4B60532A34EC77E980AA050C571E053;12219.
+(rerunfilecheck)             Checksum: 8FCA866DD6BEF6FC773F6FF627EA4B26;13414.
 Package logreq Info: Writing requests to 'main-page.run.xml'.
 \openout1 = `main-page.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53194 strings out of 476775
- 1229675 string characters out of 5808212
- 2517186 words of memory out of 5000000
- 72440 multiletter control sequences out of 15000+600000
+ 53209 strings out of 476775
+ 1230147 string characters out of 5808212
+ 2520673 words of memory out of 5000000
+ 72455 multiletter control sequences out of 15000+600000
  517925 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,8n,120p,1134b,5905s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main-page.pdf (42 pages).
+Output written on main-page.pdf (46 pages).

@@ -49,20 +49,82 @@
       \field{title}{Современные операционные системы}
       \field{year}{2015}
     \endentry
-    \entry{rt_scheduling}{online}{}
+    \entry{understanding}{book}{}
+      \name{author}{2}{}{%
+        {{hash=bf548d53325530139be1bf265f542f48}{%
+           family={Bovet},
+           familyi={B\bibinitperiod},
+           given={Daniel\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=6802cf15d4ce77b7e7d2ef970fd22925}{%
+           family={Cesati},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'REILLY}%
+      }
+      \strng{namehash}{1a1875439dc8cc4555334988880138d1}
+      \strng{fullhash}{1a1875439dc8cc4555334988880138d1}
+      \strng{bibnamehash}{1a1875439dc8cc4555334988880138d1}
+      \strng{authorbibnamehash}{1a1875439dc8cc4555334988880138d1}
+      \strng{authornamehash}{1a1875439dc8cc4555334988880138d1}
+      \strng{authorfullhash}{1a1875439dc8cc4555334988880138d1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Real-Time group scheduling}
-      \field{urlday}{3}
+      \field{edition}{3}
+      \field{title}{Understanding the Linux Kernel}
+      \field{year}{2005}
+    \endentry
+    \entry{rms}{online}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{title}{Rate-monotonic scheduling}
+      \field{urlday}{23}
       \field{urlmonth}{12}
       \field{urlyear}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://docs.kernel.org/scheduler/sched-rt-group.html
+      \verb https://en.wikipedia.org/wiki/Rate-monotonic_scheduling
       \endverb
       \verb{url}
-      \verb https://docs.kernel.org/scheduler/sched-rt-group.html
+      \verb https://en.wikipedia.org/wiki/Rate-monotonic_scheduling
+      \endverb
+    \endentry
+    \entry{habr}{online}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{Linux в режиме реального времени}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://habr.com/ru/companies/ruvds/articles/529388/
+      \endverb
+      \verb{url}
+      \verb https://habr.com/ru/companies/ruvds/articles/529388/
+      \endverb
+    \endentry
+    \entry{posix}{online}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{title}{REAL-TIME POSIX: AN OVERVIEW}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.cs.unc.edu/~anderson/teach/comp790/papers/posix-rt.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cs.unc.edu/~anderson/teach/comp790/papers/posix-rt.pdf
       \endverb
     \endentry
     \entry{sched}{online}{}
@@ -191,6 +253,22 @@
       \endverb
       \verb{url}
       \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/uaccess.h
+      \endverb
+    \endentry
+    \entry{seq}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Исходный код /include/linux/seq\_file.h}
+      \field{urlday}{3}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/seq\_file.h
+      \endverb
+      \verb{url}
+      \verb https://elixir.bootlin.com/linux/v6.1/source/include/linux/seq%5C_file.h
       \endverb
     \endentry
     \entry{c}{online}{}

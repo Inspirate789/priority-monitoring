@@ -1,0 +1,3451 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~1 TIME~~~~~~~~~~~~~~~~~~~~~~~~~~
+pid: 1    , comm:         systemd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  130217887, task_is_realtime: 0
+utime: 1632000000 (ticks), stime:      1320000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 2    , comm:        kthreadd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4411208, task_is_realtime: 0
+utime:          0 (ticks), stime:        16000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3    , comm:          rcu_gp
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4    , comm:      rcu_par_gp
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 5    , comm:    slub_flushwq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 6    , comm:           netns
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10   , comm:    mm_percpu_wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11   , comm: rcu_tasks_kthre
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 12   , comm: rcu_tasks_rude_
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13   , comm: rcu_tasks_trace
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14   , comm:     ksoftirqd/0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  781969417, task_is_realtime: 0
+utime:          0 (ticks), stime:        52000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 15   , comm:     rcu_preempt
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  482792910, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 16   , comm:     migration/0
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, rt_priority:  99, policy:   1
+run_delay: 1224491087, task_is_realtime: 1
+utime:          0 (ticks), stime:        44000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 18   , comm:         cpuhp/0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  889749974, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 19   , comm:         cpuhp/1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1006743, task_is_realtime: 0
+utime:          0 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 20   , comm:     migration/1
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, rt_priority:  99, policy:   1
+run_delay:   37991118, task_is_realtime: 1
+utime:          0 (ticks), stime:        16000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 21   , comm:     ksoftirqd/1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  186558786, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 23   , comm:    kworker/1:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:    1710141, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 24   , comm:         cpuhp/2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  310104841, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 25   , comm:     migration/2
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, rt_priority:  99, policy:   1
+run_delay:  703587397, task_is_realtime: 1
+utime:          0 (ticks), stime:        24000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 26   , comm:     ksoftirqd/2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  846721161, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 28   , comm:    kworker/2:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:    2669176, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 29   , comm:         cpuhp/3
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   15923469, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 30   , comm:     migration/3
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, rt_priority:  99, policy:   1
+run_delay:   85132775, task_is_realtime: 1
+utime:          0 (ticks), stime:        24000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 31   , comm:     ksoftirqd/3
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  204857026, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 33   , comm:    kworker/3:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:    2233776, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 34   , comm:         cpuhp/4
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  377502249, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 35   , comm:     migration/4
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, rt_priority:  99, policy:   1
+run_delay:  388517417, task_is_realtime: 1
+utime:          0 (ticks), stime:        28000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 36   , comm:     ksoftirqd/4
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  474531503, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 38   , comm:    kworker/4:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 39   , comm:         cpuhp/5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     609138, task_is_realtime: 0
+utime:          0 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 40   , comm:     migration/5
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, rt_priority:  99, policy:   1
+run_delay: 70116163989, task_is_realtime: 1
+utime:          0 (ticks), stime:        24000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 41   , comm:     ksoftirqd/5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay: 30335730120, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 43   , comm:    kworker/5:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:     575160, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 44   , comm:         cpuhp/6
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    3634699, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 45   , comm:     migration/6
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, rt_priority:  99, policy:   1
+run_delay:  660083376, task_is_realtime: 1
+utime:          0 (ticks), stime:        20000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 46   , comm:     ksoftirqd/6
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  785600017, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 48   , comm:    kworker/6:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 49   , comm:         cpuhp/7
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    5156194, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 50   , comm:     migration/7
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, rt_priority:  99, policy:   1
+run_delay:    9195979, task_is_realtime: 1
+utime:          0 (ticks), stime:        24000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 51   , comm:     ksoftirqd/7
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  190819930, task_is_realtime: 0
+utime:          0 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 53   , comm:    kworker/7:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 62   , comm:       kdevtmpfs
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    2219197, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 63   , comm:    inet_frag_wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 64   , comm:         kauditd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    5072614, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 65   , comm:      khungtaskd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     199510, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 66   , comm:      oom_reaper
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 67   , comm:       writeback
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 68   , comm:      kcompactd0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   52762647, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 69   , comm:            ksmd
+prio: 125, static_prio: 125, normal_prio (with scheduler policy): 125, rt_priority:   0, policy:   0
+run_delay:       7542, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 70   , comm:      khugepaged
+prio: 139, static_prio: 139, normal_prio (with scheduler policy): 139, rt_priority:   0, policy:   0
+run_delay:   22234440, task_is_realtime: 0
+utime:          0 (ticks), stime:       392000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 71   , comm:     kintegrityd
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 72   , comm:         kblockd
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 73   , comm:  blkcg_punt_bio
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 76   , comm:      tpm_dev_wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 77   , comm:     edac-poller
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 78   , comm:      devfreq_wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 80   , comm:    kworker/1:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:   21309791, task_is_realtime: 0
+utime:          0 (ticks), stime:       116000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 81   , comm:         kswapd0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      36316, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 88   , comm:        kthrotld
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 93   , comm: acpi_thermal_pm
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 94   , comm:             mld
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 95   , comm:    kworker/3:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:   12675565, task_is_realtime: 0
+utime:          0 (ticks), stime:       112000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 96   , comm:   ipv6_addrconf
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 101  , comm:           kstrp
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 106  , comm:    zswap-shrink
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 162  , comm:    kworker/2:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:   20772035, task_is_realtime: 0
+utime:          0 (ticks), stime:        84000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 163  , comm:    kworker/0:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:   57691174, task_is_realtime: 0
+utime:          0 (ticks), stime:       188000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 164  , comm:    kworker/6:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:    6850258, task_is_realtime: 0
+utime:          0 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 165  , comm:    kworker/5:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:    9605331, task_is_realtime: 0
+utime:          0 (ticks), stime:        52000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 166  , comm:    kworker/4:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:    8384304, task_is_realtime: 0
+utime:          0 (ticks), stime:        56000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 167  , comm:    kworker/7:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:   24904358, task_is_realtime: 0
+utime:          0 (ticks), stime:        84000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 204  , comm:         nvme-wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 205  , comm:   nvme-reset-wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 206  , comm:  nvme-delete-wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:      77295, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 207  , comm:         ata_sff
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 209  , comm:       scsi_eh_0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     190440, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 210  , comm:      scsi_tmf_0
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 211  , comm:       scsi_eh_1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     214147, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 212  , comm:      scsi_tmf_1
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 213  , comm:       scsi_eh_2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1845580, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 214  , comm:      scsi_tmf_2
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 215  , comm:       scsi_eh_3
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    2099666, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 216  , comm:      scsi_tmf_3
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 217  , comm:       scsi_eh_4
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     488553, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 218  , comm:      scsi_tmf_4
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 222  , comm:     card0-crtc0
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, rt_priority:  50, policy:   1
+run_delay:          0, task_is_realtime: 1
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 223  , comm:     card0-crtc1
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, rt_priority:  50, policy:   1
+run_delay:          0, task_is_realtime: 1
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 224  , comm:     card0-crtc2
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, rt_priority:  50, policy:   1
+run_delay:          0, task_is_realtime: 1
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 272  , comm:     jbd2/sda5-8
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   10742664, task_is_realtime: 0
+utime:          0 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 273  , comm: ext4-rsv-conver
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 335  , comm: systemd-journal
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  301165841, task_is_realtime: 0
+utime: 1056000000 (ticks), stime:      1196000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 356  , comm:   systemd-udevd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  511944237, task_is_realtime: 0
+utime:  276000000 (ticks), stime:       408000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 460  , comm:       watchdogd
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, rt_priority:  50, policy:   1
+run_delay:      21124, task_is_realtime: 1
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 465  , comm: irq/83-ELAN0626
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, rt_priority:  50, policy:   1
+run_delay:  159812213, task_is_realtime: 1
+utime:          0 (ticks), stime:      1408000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 466  , comm:        cfg80211
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 539  , comm:     jbd2/sda8-8
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    5876384, task_is_realtime: 0
+utime:          0 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 540  , comm: ext4-rsv-conver
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:    2576578, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 542  , comm:     jbd2/sda9-8
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   33146422, task_is_realtime: 0
+utime:          0 (ticks), stime:       364000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 543  , comm: ext4-rsv-conver
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:    9170866, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 546  , comm:     jbd2/sda6-8
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   45820975, task_is_realtime: 0
+utime:          0 (ticks), stime:        92000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 547  , comm: ext4-rsv-conver
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:     995197, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 636  , comm:        nv_queue
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    2440895, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 677  , comm:          cryptd
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:     388525, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 748  , comm: irq/141-rtw88_p
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, rt_priority:  50, policy:   1
+run_delay:  366403341, task_is_realtime: 1
+utime:          0 (ticks), stime:     16432000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 873  , comm: systemd-timesyn
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4682685, task_is_realtime: 0
+utime:   68000000 (ticks), stime:        32000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1079 , comm: nvidia-modeset/
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  107971950, task_is_realtime: 0
+utime:          0 (ticks), stime:      3488000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1080 , comm: nvidia-modeset/
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1191 , comm:    avahi-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   38992851, task_is_realtime: 0
+utime:  120000000 (ticks), stime:       180000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1194 , comm:      bluetoothd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   49320840, task_is_realtime: 0
+utime:  172000000 (ticks), stime:        88000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1195 , comm:            cron
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     483842, task_is_realtime: 0
+utime:          0 (ticks), stime:        20000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1196 , comm:     dbus-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  357571402, task_is_realtime: 0
+utime: 6668000000 (ticks), stime:       672000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1198 , comm: low-memory-moni
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, rt_priority:   1, policy:   1
+run_delay:    8268710, task_is_realtime: 1
+utime:   88000000 (ticks), stime:        28000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1200 , comm:         polkitd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  149698547, task_is_realtime: 0
+utime:  532000000 (ticks), stime:       260000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1201 , comm:           snapd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   97547922, task_is_realtime: 0
+utime:   28000000 (ticks), stime:       892000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1202 , comm: nvidia-persiste
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    9200804, task_is_realtime: 0
+utime:    4000000 (ticks), stime:      1156000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1203 , comm: switcheroo-cont
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   19208450, task_is_realtime: 0
+utime:   76000000 (ticks), stime:        36000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1207 , comm:  irq/142-nvidia
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, rt_priority:  50, policy:   1
+run_delay:  292920024, task_is_realtime: 1
+utime:          0 (ticks), stime:     14088000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1209 , comm:        nv_queue
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   19292923, task_is_realtime: 0
+utime:          0 (ticks), stime:       724000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1210 , comm:         udisksd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   73288957, task_is_realtime: 0
+utime:  116000000 (ticks), stime:       136000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1217 , comm:    avahi-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    2831628, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1218 , comm:  NetworkManager
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  165588496, task_is_realtime: 0
+utime: 2100000000 (ticks), stime:      1800000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1219 , comm:  wpa_supplicant
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   64847633, task_is_realtime: 0
+utime: 1088000000 (ticks), stime:      3596000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1258 , comm:          psimon
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, rt_priority:   1, policy:   1
+run_delay:     462033, task_is_realtime: 1
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1262 , comm:    ModemManager
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   48155523, task_is_realtime: 0
+utime:  180000000 (ticks), stime:       160000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1331 , comm:           cupsd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   23339146, task_is_realtime: 0
+utime:   12000000 (ticks), stime:        16000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1333 , comm:   gitlab-runner
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   39777172, task_is_realtime: 0
+utime:  100000000 (ticks), stime:        44000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1342 , comm:      containerd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   32383302, task_is_realtime: 0
+utime:   20000000 (ticks), stime:        36000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1372 , comm:            gdm3
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1607964, task_is_realtime: 0
+utime:   28000000 (ticks), stime:        20000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1398 , comm:        postgres
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    3121532, task_is_realtime: 0
+utime:   24000000 (ticks), stime:       100000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1421 , comm:        postgres
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    8274573, task_is_realtime: 0
+utime:    4000000 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1425 , comm:        postgres
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    6864746, task_is_realtime: 0
+utime:    4000000 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1426 , comm:        postgres
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4828485, task_is_realtime: 0
+utime:   12000000 (ticks), stime:        16000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1427 , comm:        postgres
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4417076, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1520 , comm:    rtkit-daemon
+prio: 121, static_prio: 121, normal_prio (with scheduler policy): 121, rt_priority:   0, policy:   0
+run_delay:    3744386, task_is_realtime: 0
+utime:          0 (ticks), stime:        16000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1610 , comm:        krfcommd
+prio: 110, static_prio: 110, normal_prio (with scheduler policy): 110, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1678 , comm:         upowerd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   18169357, task_is_realtime: 0
+utime:  244000000 (ticks), stime:       168000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 1807 , comm:          colord
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   14668120, task_is_realtime: 0
+utime:  176000000 (ticks), stime:        32000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 2079 , comm:    cups-browsed
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   31586147, task_is_realtime: 0
+utime:   76000000 (ticks), stime:        56000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 2162 , comm:    wg-crypt-wg0
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 2746 , comm:     kworker/1:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  105564996, task_is_realtime: 0
+utime:          0 (ticks), stime:        36000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3047 , comm: gdm-session-wor
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    6545798, task_is_realtime: 0
+utime:   60000000 (ticks), stime:        32000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3072 , comm:        (sd-pam)
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    3671984, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3087 , comm:        pipewire
+prio: 109, static_prio: 109, normal_prio (with scheduler policy): 109, rt_priority:   0, policy:   0
+run_delay:   49303174, task_is_realtime: 0
+utime:  116000000 (ticks), stime:       160000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3089 , comm:     wireplumber
+prio: 109, static_prio: 109, normal_prio (with scheduler policy): 109, rt_priority:   0, policy:   0
+run_delay:   28435802, task_is_realtime: 0
+utime:  384000000 (ticks), stime:       204000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3095 , comm: gnome-keyring-d
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   14811091, task_is_realtime: 0
+utime:   84000000 (ticks), stime:        36000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3096 , comm:     dbus-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  414127644, task_is_realtime: 0
+utime:  752000000 (ticks), stime:       288000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3104 , comm:           gvfsd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    5796872, task_is_realtime: 0
+utime:   24000000 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3134 , comm: tracker-miner-f
+prio: 139, static_prio: 139, normal_prio (with scheduler policy): 139, rt_priority:   0, policy:   5
+run_delay:  418298414, task_is_realtime: 0
+utime: 4824000000 (ticks), stime:       592000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3140 , comm:   gdm-x-session
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     783660, task_is_realtime: 0
+utime:    4000000 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3142 , comm:            Xorg
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  845456049, task_is_realtime: 0
+utime: 74272000000 (ticks), stime:     58904000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3153 , comm: xdg-permission-
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1453015, task_is_realtime: 0
+utime:    4000000 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3164 , comm: gvfs-udisks2-vo
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   12000832, task_is_realtime: 0
+utime:  168000000 (ticks), stime:        36000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3169 , comm: gvfs-mtp-volume
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4278908, task_is_realtime: 0
+utime:    8000000 (ticks), stime:        16000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3173 , comm: gvfs-goa-volume
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4526532, task_is_realtime: 0
+utime:    8000000 (ticks), stime:        24000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3177 , comm:      goa-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   42928740, task_is_realtime: 0
+utime:  108000000 (ticks), stime:        36000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3184 , comm: goa-identity-se
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    3045036, task_is_realtime: 0
+utime:    8000000 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3216 , comm: gvfs-gphoto2-vo
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     883892, task_is_realtime: 0
+utime:    8000000 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3220 , comm: gvfs-afc-volume
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     383184, task_is_realtime: 0
+utime:    4000000 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3236 , comm: gnome-session-b
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4412684, task_is_realtime: 0
+utime:   16000000 (ticks), stime:        20000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3305 , comm:       ssh-agent
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   12975336, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3406 , comm:  kworker/u16:34
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   45388523, task_is_realtime: 0
+utime:          0 (ticks), stime:       968000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3686 , comm:    kworker/0:2H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:      68300, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3739 , comm: at-spi-bus-laun
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4649615, task_is_realtime: 0
+utime:    8000000 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3745 , comm:     dbus-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   90157081, task_is_realtime: 0
+utime:  232000000 (ticks), stime:        52000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3758 , comm:   gcr-ssh-agent
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:    4000000 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3759 , comm: gnome-session-c
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    2491675, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3767 , comm: gnome-session-b
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   58752619, task_is_realtime: 0
+utime:   96000000 (ticks), stime:        48000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3788 , comm:     gnome-shell
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay: 2558360472, task_is_realtime: 0
+utime: 86108000000 (ticks), stime:     20684000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3840 , comm: gnome-shell-cal
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    6082721, task_is_realtime: 0
+utime:   40000000 (ticks), stime:        60000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3847 , comm: evolution-sourc
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   60302067, task_is_realtime: 0
+utime:  196000000 (ticks), stime:        52000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3850 , comm:     kworker/0:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay: 1493842814, task_is_realtime: 0
+utime:          0 (ticks), stime:      1780000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3866 , comm:         geoclue
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   73944717, task_is_realtime: 0
+utime:  964000000 (ticks), stime:       184000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3883 , comm: evolution-calen
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   54730596, task_is_realtime: 0
+utime:   76000000 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3910 , comm: evolution-addre
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   59048330, task_is_realtime: 0
+utime:   44000000 (ticks), stime:        16000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3920 , comm:     gvfsd-trash
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   14184223, task_is_realtime: 0
+utime:   52000000 (ticks), stime:        24000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3931 , comm:             gjs
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    5687014, task_is_realtime: 0
+utime:  104000000 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3933 , comm: at-spi2-registr
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  169954475, task_is_realtime: 0
+utime:  628000000 (ticks), stime:       596000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3970 , comm:              sh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    2196829, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3975 , comm: gsd-a11y-settin
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    7660527, task_is_realtime: 0
+utime:   16000000 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3978 , comm:     ibus-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  370230333, task_is_realtime: 0
+utime: 1700000000 (ticks), stime:       284000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3981 , comm:    gsd-datetime
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   67036129, task_is_realtime: 0
+utime:   20000000 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3984 , comm: gsd-housekeepin
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   42973269, task_is_realtime: 0
+utime:  188000000 (ticks), stime:       120000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3986 , comm:         anydesk
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  165863565, task_is_realtime: 0
+utime:  120000000 (ticks), stime:        52000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3987 , comm:    gsd-keyboard
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  211491317, task_is_realtime: 0
+utime:  344000000 (ticks), stime:        44000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3989 , comm:  gsd-media-keys
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  365344207, task_is_realtime: 0
+utime:  412000000 (ticks), stime:       104000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3990 , comm: evolution-alarm
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  229284041, task_is_realtime: 0
+utime:  492000000 (ticks), stime:       128000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3992 , comm:       gsd-power
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  228565778, task_is_realtime: 0
+utime:  448000000 (ticks), stime:        96000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3993 , comm: gsd-print-notif
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  123158420, task_is_realtime: 0
+utime:   20000000 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3994 , comm:  gnome-software
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  338186043, task_is_realtime: 0
+utime: 1428000000 (ticks), stime:       296000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 3998 , comm:      gsd-rfkill
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   84566311, task_is_realtime: 0
+utime:   20000000 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4000 , comm: gsd-screensaver
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   41495246, task_is_realtime: 0
+utime:    8000000 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4002 , comm:     gsd-sharing
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  122310207, task_is_realtime: 0
+utime:  440000000 (ticks), stime:        64000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4004 , comm:   gsd-smartcard
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  104810200, task_is_realtime: 0
+utime:   16000000 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4007 , comm:       gsd-sound
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   67628567, task_is_realtime: 0
+utime:    8000000 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4008 , comm: gsd-usb-protect
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   80247974, task_is_realtime: 0
+utime:   16000000 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4011 , comm:   gsd-xsettings
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  387345336, task_is_realtime: 0
+utime:  348000000 (ticks), stime:        84000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4014 , comm: gsd-disk-utilit
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   51727613, task_is_realtime: 0
+utime:    8000000 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4101 , comm:             gjs
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   41581844, task_is_realtime: 0
+utime:  104000000 (ticks), stime:        24000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4105 , comm: ibus-extension-
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  339273818, task_is_realtime: 0
+utime: 2804000000 (ticks), stime:        96000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4112 , comm:     gsd-printer
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   21625010, task_is_realtime: 0
+utime:   28000000 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4113 , comm:        ibus-x11
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  117243436, task_is_realtime: 0
+utime:  300000000 (ticks), stime:        44000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4208 , comm: xdg-desktop-por
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   49562446, task_is_realtime: 0
+utime:   64000000 (ticks), stime:        24000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4219 , comm: xdg-document-po
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   10911729, task_is_realtime: 0
+utime:   16000000 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4225 , comm:     fusermount3
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    7387810, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4232 , comm: xdg-desktop-por
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   97113047, task_is_realtime: 0
+utime:  692000000 (ticks), stime:       128000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4306 , comm: ibus-engine-sim
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   48169833, task_is_realtime: 0
+utime:  288000000 (ticks), stime:        60000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4341 , comm: xdg-desktop-por
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  122010257, task_is_realtime: 0
+utime:  352000000 (ticks), stime:        80000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4391 , comm:           fwupd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   36519901, task_is_realtime: 0
+utime: 1768000000 (ticks), stime:       156000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4594 , comm:     kworker/4:4
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   96407686, task_is_realtime: 0
+utime:          0 (ticks), stime:        24000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 4881 , comm:  gvfsd-metadata
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   22801951, task_is_realtime: 0
+utime:   52000000 (ticks), stime:        32000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 5595 , comm:       texstudio
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  667443942, task_is_realtime: 0
+utime: 48440000000 (ticks), stime:      2888000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 6381 , comm:   kworker/u17:2
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:   21075682, task_is_realtime: 0
+utime:          0 (ticks), stime:       796000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 6935 , comm:     kworker/3:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   75364051, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 6969 , comm:     kworker/6:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  107095522, task_is_realtime: 0
+utime:          0 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 6971 , comm:     kworker/2:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   46424647, task_is_realtime: 0
+utime:          0 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 7015 , comm:     kworker/5:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay: 69520804366, task_is_realtime: 0
+utime:          0 (ticks), stime:        32000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 7357 , comm:   kworker/u17:1
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:   13660982, task_is_realtime: 0
+utime:          0 (ticks), stime:       464000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 7430 , comm:     kworker/0:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  237022224, task_is_realtime: 0
+utime:          0 (ticks), stime:       516000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 7553 , comm:     kworker/7:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  100992053, task_is_realtime: 0
+utime:          0 (ticks), stime:        28000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 8585 , comm:    gvfsd-recent
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1750104, task_is_realtime: 0
+utime:  208000000 (ticks), stime:        52000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 9514 , comm:   kworker/u16:5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   14792856, task_is_realtime: 0
+utime:          0 (ticks), stime:       724000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 9530 , comm:  kworker/u16:21
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    5857334, task_is_realtime: 0
+utime:          0 (ticks), stime:       116000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 9544 , comm:  kworker/u16:36
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    5525523, task_is_realtime: 0
+utime:          0 (ticks), stime:       116000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 9548 , comm:  kworker/u16:41
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    2558449, task_is_realtime: 0
+utime:          0 (ticks), stime:        24000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 9561 , comm:  kworker/u16:54
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1956084, task_is_realtime: 0
+utime:          0 (ticks), stime:        60000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10183, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay: 1478025368, task_is_realtime: 0
+utime: 16536000000 (ticks), stime:      3904000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10190, comm:             cat
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   29403619, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10192, comm: chrome_crashpad
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     989170, task_is_realtime: 0
+utime:          0 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10194, comm: chrome_crashpad
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:       9168, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10200, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     436651, task_is_realtime: 0
+utime:   48000000 (ticks), stime:        44000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10201, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     437357, task_is_realtime: 0
+utime:   48000000 (ticks), stime:        48000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10202, comm:     nacl_helper
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      68969, task_is_realtime: 0
+utime:    4000000 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10205, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   26943763, task_is_realtime: 0
+utime:   12000000 (ticks), stime:       300000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10230, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  853869342, task_is_realtime: 0
+utime: 8400000000 (ticks), stime:      3404000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10231, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    6491710, task_is_realtime: 0
+utime:  240000000 (ticks), stime:        80000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10242, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    9737730, task_is_realtime: 0
+utime:  116000000 (ticks), stime:        44000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10281, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   37667317, task_is_realtime: 0
+utime:  124000000 (ticks), stime:        56000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10282, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   25849997, task_is_realtime: 0
+utime:   72000000 (ticks), stime:        36000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10358, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   47036735, task_is_realtime: 0
+utime:  144000000 (ticks), stime:        96000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10418, comm:           pcscd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     334181, task_is_realtime: 0
+utime:    8000000 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10431, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  727069346, task_is_realtime: 0
+utime: 74020000000 (ticks), stime:      2372000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10442, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  201365944, task_is_realtime: 0
+utime: 2648000000 (ticks), stime:       320000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10479, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   17922976, task_is_realtime: 0
+utime:  108000000 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10493, comm:   kworker/u17:3
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, rt_priority:   0, policy:   0
+run_delay:    5485703, task_is_realtime: 0
+utime:          0 (ticks), stime:       248000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10537, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  241299711, task_is_realtime: 0
+utime: 3148000000 (ticks), stime:       408000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10554, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   32886810, task_is_realtime: 0
+utime:  192000000 (ticks), stime:        76000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10568, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   40739795, task_is_realtime: 0
+utime:   68000000 (ticks), stime:        32000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10599, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   31897497, task_is_realtime: 0
+utime:  320000000 (ticks), stime:        68000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10608, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   24982526, task_is_realtime: 0
+utime:   68000000 (ticks), stime:        52000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10634, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  173498626, task_is_realtime: 0
+utime: 2156000000 (ticks), stime:       300000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10664, comm:     kworker/4:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      62025, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10666, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  112006660, task_is_realtime: 0
+utime: 2352000000 (ticks), stime:       340000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10701, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  319738405, task_is_realtime: 0
+utime: 7084000000 (ticks), stime:      1320000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10740, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  120809951, task_is_realtime: 0
+utime: 2044000000 (ticks), stime:       296000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10763, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  101776134, task_is_realtime: 0
+utime: 2260000000 (ticks), stime:       352000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10790, comm:     kworker/6:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      41309, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10854, comm:        nautilus
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  342061561, task_is_realtime: 0
+utime: 11424000000 (ticks), stime:      1736000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10920, comm:     kworker/5:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     135955, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10933, comm:          evince
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  364629059, task_is_realtime: 0
+utime: 13088000000 (ticks), stime:      2948000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 10939, comm:         evinced
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   11799475, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11106, comm:     kworker/3:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   13225062, task_is_realtime: 0
+utime:          0 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11534, comm:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  345046532, task_is_realtime: 0
+utime: 8004000000 (ticks), stime:      1540000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11539, comm:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    2652629, task_is_realtime: 0
+utime:   32000000 (ticks), stime:        56000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11540, comm:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    3034319, task_is_realtime: 0
+utime:   48000000 (ticks), stime:        36000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11556, comm: chrome_crashpad
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4964536, task_is_realtime: 0
+utime:   24000000 (ticks), stime:        44000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11570, comm:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  540410707, task_is_realtime: 0
+utime: 9916000000 (ticks), stime:      3960000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11578, comm:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    2695130, task_is_realtime: 0
+utime:   80000000 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11847, comm:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   47450776, task_is_realtime: 0
+utime: 1148000000 (ticks), stime:       520000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11857, comm:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  243626528, task_is_realtime: 0
+utime: 6580000000 (ticks), stime:      1488000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11869, comm:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  155885142, task_is_realtime: 0
+utime: 3456000000 (ticks), stime:       384000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 11912, comm:             zsh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    5447141, task_is_realtime: 0
+utime:  444000000 (ticks), stime:       248000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 12265, comm:        cpptools
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:   24307203, task_is_realtime: 0
+utime:   28000000 (ticks), stime:        32000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 12366, comm:     kworker/0:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:  128434856, task_is_realtime: 0
+utime:          0 (ticks), stime:       276000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 12371, comm:   kworker/u16:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4678655, task_is_realtime: 0
+utime:          0 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 12741, comm:    cpptools-srv
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    3197086, task_is_realtime: 0
+utime:    4000000 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13043, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    2923977, task_is_realtime: 0
+utime:   24000000 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13088, comm:     kworker/1:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      54019, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13209, comm:   kworker/u16:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      34098, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13210, comm:   kworker/u16:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    8280480, task_is_realtime: 0
+utime:          0 (ticks), stime:        64000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13211, comm:   kworker/u16:3
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    6261903, task_is_realtime: 0
+utime:          0 (ticks), stime:       104000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13212, comm:   kworker/u16:4
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     226840, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13213, comm:   kworker/u16:6
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     951103, task_is_realtime: 0
+utime:          0 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13214, comm:   kworker/u16:7
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     630498, task_is_realtime: 0
+utime:          0 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13215, comm:   kworker/u16:8
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1607155, task_is_realtime: 0
+utime:          0 (ticks), stime:        12000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13216, comm:   kworker/u16:9
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      23582, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13217, comm:  kworker/u16:10
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      71390, task_is_realtime: 0
+utime:          0 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13218, comm:  kworker/u16:11
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      21532, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13219, comm:  kworker/u16:12
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      13917, task_is_realtime: 0
+utime:          0 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13220, comm:  kworker/u16:13
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      13835, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13221, comm:  kworker/u16:14
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     971293, task_is_realtime: 0
+utime:          0 (ticks), stime:       576000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13223, comm:  kworker/u16:16
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     270859, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13224, comm:  kworker/u16:17
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13225, comm:  kworker/u16:18
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      17567, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13226, comm:  kworker/u16:19
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      17777, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13227, comm:  kworker/u16:20
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     236096, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13228, comm:  kworker/u16:22
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      76941, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13229, comm:  kworker/u16:23
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1468533, task_is_realtime: 0
+utime:          0 (ticks), stime:        76000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13230, comm:  kworker/u16:24
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      51655, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13231, comm:  kworker/u16:25
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1662836, task_is_realtime: 0
+utime:          0 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13232, comm:  kworker/u16:26
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     259387, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13233, comm:  kworker/u16:27
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      27597, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13234, comm:  kworker/u16:28
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      33526, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13235, comm:  kworker/u16:29
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      30358, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13236, comm:  kworker/u16:30
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      20617, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13237, comm:  kworker/u16:31
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      15924, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13238, comm:  kworker/u16:32
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:       3666, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13239, comm:  kworker/u16:33
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:       8151, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13240, comm:  kworker/u16:35
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:       9519, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13242, comm:  kworker/u16:38
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      11142, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13243, comm:  kworker/u16:39
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      11430, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13244, comm:  kworker/u16:42
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      11799, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13245, comm:  kworker/u16:43
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      12136, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13246, comm:  kworker/u16:44
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      18266, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13247, comm:  kworker/u16:45
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      40985, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13248, comm:  kworker/u16:46
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      19500, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13249, comm:  kworker/u16:47
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      20346, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13251, comm:  kworker/u16:49
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:       2172, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13252, comm:  kworker/u16:50
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      30461, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13253, comm:  kworker/u16:51
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      17769, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13254, comm:  kworker/u16:52
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      35211, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13256, comm:  kworker/u16:55
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     236573, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13257, comm:  kworker/u16:56
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      47671, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13258, comm:  kworker/u16:57
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      11197, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13259, comm:  kworker/u16:58
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      78954, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13260, comm:  kworker/u16:59
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      83117, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13261, comm:  kworker/u16:60
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      22046, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13262, comm:  kworker/u16:61
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1550008, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13263, comm:          nvidia
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13265, comm:     kworker/2:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     124186, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13266, comm:     kworker/3:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:       1764, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13267, comm:     kworker/6:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:       3720, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13269, comm:     kworker/7:3
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    7212468, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13277, comm:     kworker/7:4
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    5677964, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 13773, comm:     kworker/4:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:      10687, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14487, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     874282, task_is_realtime: 0
+utime:   52000000 (ticks), stime:        32000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14545, comm:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    1046364, task_is_realtime: 0
+utime:   56000000 (ticks), stime:        40000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14586, comm: gnome-terminal-
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    3761303, task_is_realtime: 0
+utime:  568000000 (ticks), stime:        76000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14637, comm:             zsh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:    4814940, task_is_realtime: 0
+utime:  196000000 (ticks), stime:       144000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14864, comm:             vlc
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     182363, task_is_realtime: 0
+utime:   52000000 (ticks), stime:        44000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14938, comm: taskPrintThread
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:        20000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14939, comm:              sh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:          0, task_is_realtime: 0
+utime:          0 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14940, comm:   (udev-worker)
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     358178, task_is_realtime: 0
+utime:    4000000 (ticks), stime:         4000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14941, comm:             cat
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     117747, task_is_realtime: 0
+utime:          0 (ticks), stime:         8000000 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
+pid: 14942, comm:         (spawn)
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, rt_priority:   0, policy:   0
+run_delay:     362851, task_is_realtime: 0
+utime:          0 (ticks), stime:               0 (ticks)
+sched_statistics:
+wait_max:          0, wait_count:          0, wait_sum:          0
+iowait_count:          0, iowait_sum:          0
+sleep_max:          0, sum_sleep_runtime:          0
+block_max:          0, sum_block_runtime:          0, exec_max:          0
+
